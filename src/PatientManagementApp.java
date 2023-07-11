@@ -246,6 +246,8 @@ public class PatientManagementApp extends JFrame {
             currentPatientIndex++;
             displayCurrentPatient();
         }
+//        System.out.println("OutcurrentPatientIndex: " + currentPatientIndex);
+//        System.out.println("patients.size(): " + patients.size());
     }
 
     private void showPatientList() {
@@ -280,6 +282,9 @@ public class PatientManagementApp extends JFrame {
         txtAddress.setText("");
         txtNik.setText("");
         txtDateOfBirth.setText("");
+
+        // reset currentPatientIndex
+        currentPatientIndex = -1;
     }
 
     private void displayCurrentPatient() {
